@@ -40,4 +40,14 @@ console.log("Apps com mais de 4 estrelas.")
 console.log(get4Star())
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
+function lowerCaseNames(){
+    apps.map(app => {
+        app.appname = app.appname.toLowerCase();
+        return app;
+    })
+    console.log("Nomes do apps convertidos para lowercase.")
+}
 
+lowerCaseNames()
+console.log('A estrutura do 1.o objeto:');
+console.log(apps[0]);

@@ -1,43 +1,43 @@
 const funcionarios = [
     {
         id: 11,
-        nome: 'joao da silva',
+        nome: 'Cida Silva',
         cpf: '111.222.333-44',
         categoria: 'tecnico'
     },
     {
         id: 22,
-        nome: 'joana da silva',
+        nome: 'Joana da Silva',
         cpf: '111.222.333-55',
         categoria: 'tecnico'
     },
     {
         id: 23,
-        nome: 'joana da Mata',
+        nome: 'Joana da Mata',
         cpf: '111.222.333-66',
         categoria: 'analista'
     },
     {
         id: 24,
-        nome: 'joana da Mata',
+        nome: 'Antônio Carlos',
         cpf: '23456789-00',
         categoria: 'gerente'
     },
     {
         id: 45,
-        nome: 'joana da Mata',
+        nome: 'Paula Pimenta',
         cpf: '111222333-44',
         categoria: 'gerente'
     },
     {
         id: 36,
-        nome: 'joana da Mata',
+        nome: 'Maria José',
         cpf: '654321987-23',
         categoria: 'gerente'
     },
     {
         id: 27,
-        nome: 'joana da Mata',
+        nome: 'Fulano de Tal',
         cpf: '098876654-99',
         categoria: 'gerente'
     }
@@ -62,4 +62,13 @@ function findLowerID() {
     })
 }
 
-console.log(findLowerID())
+//console.log(findLowerID())
+
+function uppercaseAll() {
+    return funcionarios.map((fun) => {
+        fun.nome = fun.nome.toUpperCase()
+        return fun;
+    })
+}
+
+console.log(uppercaseAll())

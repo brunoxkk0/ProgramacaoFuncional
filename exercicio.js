@@ -22,9 +22,16 @@ console.log('A estrutura do 1.o objeto:');
 console.log(apps[0]);
 
 // EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
+function calcTotal(){
+    return apps.reduce(function (acc, curr){
+        return acc + curr.installs
+    }, 0)
+}
+
+console.log("Total de Instalações: " + calcTotal())
 
 
-// EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
+// EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4)
 
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase

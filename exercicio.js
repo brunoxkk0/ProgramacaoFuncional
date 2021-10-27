@@ -32,7 +32,12 @@ console.log("Total de Instalações: " + calcTotal())
 
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4)
+function get4Star(){
+    return apps.filter(app => app.score > 4)
+}
 
+console.log("Apps com mais de 4 estrelas.")
+console.log(get4Star())
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
 

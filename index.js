@@ -49,4 +49,17 @@ function findGerentes(){
     })
 }
 
-console.log(findGerentes())
+//console.log(findGerentes())
+
+function findLowerID() {
+    return funcionarios.reduce(function(acc, cur){
+
+        if(acc.id > cur.id){
+            acc = cur;
+        }
+
+        return acc;
+    })
+}
+
+console.log(findLowerID())

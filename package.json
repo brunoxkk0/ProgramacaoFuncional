@@ -1,19 +1,14 @@
 {
-  "name": "programacaofuncional",
+  "name": "ex2",
   "version": "1.0.0",
-  "description": "Repositório para realizar a entrega da atividades sobre Programação Funcional, da disciplina de tópicos em computação.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunoxkk0/ProgramacaoFuncional.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brunoxkk0/ProgramacaoFuncional/issues"
-  },
-  "homepage": "https://github.com/brunoxkk0/ProgramacaoFuncional#readme"
+  "dependencies": {
+    "csv-parse": "^4.12.0"
+  }
 }
